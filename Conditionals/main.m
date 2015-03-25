@@ -10,8 +10,18 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        float bankaccount=1000000000;
+        if (bankaccount<0){
+            NSLog(@"You have a negative balance");
+        }
+        else if (bankaccount >=500000 && bankaccount <1000000){ NSLog (@"You are rich");}
+        else if (bankaccount >=1000000000){ NSLog (@" You are a Billionare");}
+        else if (bankaccount >=1000000 ) {NSLog(@" You are a millionare");}
+        else{
+            NSLog (@"You are not broke, you have money in your account");
+        }
         // insert code here...
-        NSLog(@"Hello, World!");
+        
     }
     return 0;
 }
