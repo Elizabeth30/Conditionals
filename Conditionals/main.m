@@ -9,14 +9,18 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        float bankaccount=1000000000;
+    @autoreleasepool
+    {
+        const float fiftythousand=500000;
+        const float million=1000000;
+        const float billion=1000000000;
+        float bankaccount=-10;
         if (bankaccount<0){
             NSLog(@"You have a negative balance");
         }
-        else if (bankaccount >=500000 && bankaccount <1000000){ NSLog (@"You are rich");}
-        else if (bankaccount >=1000000000){ NSLog (@" You are a Billionare");}
-        else if (bankaccount >=1000000 ) {NSLog(@" You are a millionare");}
+        else if (bankaccount >=fiftythousand && bankaccount <1000000){ NSLog (@"You are rich");}
+        else if (bankaccount >=billion){ NSLog (@" You are a Billionare");}
+        else if (bankaccount >=million ) {NSLog(@" You are a millionare");}
         else{
             NSLog (@"You are not broke, you have money in your account");
         }
